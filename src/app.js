@@ -7,7 +7,7 @@ dotenv.config()
 export const app = express()
 
 // app.get('/', (req, res) => res.send(`Ok, my secret  environment variable is ${process.env.SECRET}`))
-app.use(express.static('./src/public'))
+app.use(express.static('./public'))
 app.use('/users', usersRouter)
 app.use('/payments', paymentsRouter)
 
